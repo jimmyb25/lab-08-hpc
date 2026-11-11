@@ -1,0 +1,4 @@
+JobID           JobName      User    Account  Partition  AllocCPUS              Submit               Start    Elapsed      State ExitCode 
+------------ ---------- --------- ---------- ---------- ---------- ------------------- ------------------- ---------- ---------- -------- 
+22840766_[1]  summarize    tfs8zb     ds2022    gpu-mig          0 2026-11-11T18:12:49             Unknown   00:00:00    PENDING      0:0 
+22841135_[1+  summarize    tfs8zb     ds2022    gpu-mig          0 2026-11-11T18:18:22             Unknown   00:00:00    PENDING      0:0 
