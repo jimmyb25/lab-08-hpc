@@ -40,5 +40,7 @@ Suppose your next job array has 1,000 books instead of 101. Before you submit it
 
 **Your answer:** How much memory and time did the task use, compared with what your script asked for? What would you change in your script, and why?
 
+The task used 1.68G of memory, and 18 seconds. Since the script asked for 16G of memory, and 4 minutes and 12 seconds of time, I'd make the memory request and the time request smaller because this would allow more individual tasks to go on the nodes at once, which is especially important when running something as large as 1000 tasks.
+
 ...
 
