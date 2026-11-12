@@ -27,6 +27,7 @@ You submitted your entire job array with one `sbatch` command, but Slurm schedul
 **Your answer:** Did all tasks in the array start at the same time? Was the elapsed time identical for every task? Explain why or why not.
 
 No, they did not all start at the same time, though there were some groups. The elapsed time was similar for most, but not the same for all (ranging from 14 to 16 seconds). The start times were different because there weren't enough GPU nodes available for every task to run at once, and the elapsed time was slightly different because of different text lengths, making summarization take slightly different amounts of time.
+
 ...
 
 ## 3. Slurm: did my job use what it asked for?
