@@ -1,0 +1,25 @@
+INFO Task 1: /sfs/weka/scratch/tfs8zb/books/pg1013.txt
+INFO Running Qwen/Qwen2.5-1.5B-Instruct on cuda
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   9%|▊         | 29/338 [00:00<00:01, 215.17it/s]Loading weights:  15%|█▌        | 51/338 [00:00<00:01, 157.63it/s]Loading weights:  28%|██▊       | 96/338 [00:00<00:01, 237.30it/s]Loading weights:  36%|███▌      | 122/338 [00:00<00:01, 171.40it/s]Loading weights:  42%|████▏     | 142/338 [00:00<00:01, 170.36it/s]Loading weights:  56%|█████▌    | 189/338 [00:00<00:00, 232.73it/s]Loading weights:  64%|██████▍   | 216/338 [00:01<00:00, 237.99it/s]Loading weights:  72%|███████▏  | 242/338 [00:01<00:00, 242.54it/s]Loading weights:  80%|███████▉  | 269/338 [00:01<00:00, 246.52it/s]Loading weights:  90%|████████▉ | 304/338 [00:01<00:00, 243.52it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 241.23it/s]
+--- Logging error ---
+Traceback (most recent call last):
+  File "/sfs/gpfs/tardis/home/tfs8zb/.local/share/uv/python/cpython-3.13.17-linux-x86_64-gnu/lib/python3.13/logging/__init__.py", line 1151, in emit
+    msg = self.format(record)
+  File "/sfs/gpfs/tardis/home/tfs8zb/.local/share/uv/python/cpython-3.13.17-linux-x86_64-gnu/lib/python3.13/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "/sfs/gpfs/tardis/home/tfs8zb/.local/share/uv/python/cpython-3.13.17-linux-x86_64-gnu/lib/python3.13/logging/__init__.py", line 712, in format
+    record.message = record.getMessage()
+                     ~~~~~~~~~~~~~~~~~^^
+  File "/sfs/gpfs/tardis/home/tfs8zb/.local/share/uv/python/cpython-3.13.17-linux-x86_64-gnu/lib/python3.13/logging/__init__.py", line 400, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/sfs/gpfs/tardis/home/tfs8zb/ds2022-fall26/lab-08-hpc/src/book_analysis/summarize.py", line 145, in <module>
+    main()
+  File "/sfs/gpfs/tardis/home/tfs8zb/ds2022-fall26/lab-08-hpc/src/book_analysis/summarize.py", line 132, in main
+    logger.info("%s: genre %s, summarized in $.1f s", key, genre, elapsed)
+Message: '%s: genre %s, summarized in $.1f s'
+Arguments: ('pg1013.txt', 'science fiction', 6.447938919067383)
+Summary pg1013.txt in 6.4 s on udc-aw37-1
